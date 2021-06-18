@@ -1,0 +1,543 @@
+/**************************** start reset style ****************************/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+ul {
+  list-style: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+}
+/**************************** end reset style ****************************/
+
+/**************************** General style ****************************/
+.container {
+  width: 80%;
+  margin: auto;
+  padding: 0%;
+}
+.d-flex {
+  display: flex;
+}
+.active {
+  color: white !important;
+}
+hr {
+  border: 1px solid #f5f0f0;
+}
+.overlay {
+  background-color: rgb(0 0 0 / 60%);
+  height: 100%;
+  color: white;
+}
+/**************************** General style ****************************/
+
+/**************************** Start NavBar style ****************************/
+nav {
+  position: fixed;
+  top: 0%;
+  width: 100%;
+  z-index: 999999999999;
+}
+nav .nav-items {
+  justify-content: space-between;
+  padding: 1.5%;
+}
+nav,
+nav .nav-links ul li a {
+  background-color: black;
+  color: #484646;
+  font-size: 15px;
+}
+nav .nav-links ul li a i{
+ font-size: 13px;
+}
+nav .nav-links ul li a:hover {
+  transition: 1s;
+  color: white;
+}
+nav .nav-items .nav-links {
+  width: 55%;
+}
+
+nav .nav-links ul li {
+  display: inline;
+  padding-left: 4%;
+}
+nav .nav-links ul {
+  justify-content: end;
+}
+nav .nav-links input {
+  background-color: transparent;
+  padding-left: 1%;
+  width: 16%;
+  border: none;
+  color: white;
+  outline: none;
+  margin-left: 2%;
+  margin-right: 1%;
+}
+nav .nav-links ul i {
+  font-size: 20px;
+}
+/**************************** end NavBar style ****************************/
+
+/**************************** Start Header style ****************************/
+header {
+  background-image: url(../images/cover.webp);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 600px;
+  position: relative;
+}
+.items {
+  position: absolute;
+  bottom: 10%;
+  color: #aca9a9;
+}
+.item-info {
+  width: 40%;
+}
+.item-info span {
+  font-size: 30px;
+  border: 5px solid #484646;
+  padding: 2% 1%;
+  border-radius: 50%;
+  display: block;
+  width: 100px;
+  height: 36px;
+  text-align: center;
+}
+.items .active{
+  border-right: 5px solid blue;
+  border-top: 5px solid blue;
+  border-bottom: 5px solid blue;
+}
+.item-info p {
+  padding-left: 2%;
+}
+
+/**************************** end Header style ****************************/
+/**************************** Start section-container style ****************************/
+.section-container {
+  padding-top: 7%;
+}
+.left-section {
+  width: 70%;
+  padding-right: 3%;
+}
+.right-section {
+  width: 30%;
+}
+/* .left-section hr {
+  width: 93%;
+} */
+.nav {
+  justify-content: space-between;
+  padding-bottom: 2%;
+}
+
+.nav p {
+  font-weight: bold;
+}
+.nav .nav-links {
+  width: 80%;
+}
+.section-container .nav-links ul li {
+  display: inline;
+  padding-left: 3%;
+}
+.section-container .nav-links ul li a {
+  color: #868484;
+}
+.section-container .nav-links ul li a:hover {
+  color: black;
+  border-bottom: blue solid;
+  padding-bottom: 2.5%;
+}
+.card-section {
+  justify-content: space-between;
+  padding: 5% 0;
+}
+.card-section .card {
+  width: 48%;
+}
+.card-section .cards {
+  width: 48%;
+}
+.card-section .card .card-img {
+  background-image: url(../images/travel.webp);
+  background-size: 100% 100%;
+  height: 189px;
+  background-repeat: no-repeat;
+}
+.card-section .card .card-img span {
+  display: inline-block;
+  margin: 6%;
+  padding: 1% 2%;
+  background-color: white;
+  color: blue;
+  font-size: 11px;
+}
+.card-section .card .card-img span:hover {
+  transition: 1s;
+  background-color: blue;
+  color: white;
+}
+.card-section .card .card-info {
+  padding: 6%;
+  box-sizing: border-box;
+  width: 100%;
+  box-shadow: 0px 2px 5px #bfbaba54;
+}
+.card-section .card .card-info p:nth-child(1) {
+  font-weight: 500;
+  line-height: 25px;
+  font-size: 20px;
+}
+.card-section .card .card-info p:nth-child(2),
+.card-section .card .card-info p:nth-child(3) {
+  padding: 4% 0;
+  color: #868484;
+  width: 100%;
+  line-height: 25px;
+}
+.card-section .card .card-info p:nth-child(3) {
+  font-size: 13px;
+}
+.cards .inner-card {
+  justify-content: space-between;
+  height: 103px;
+  box-shadow: 0px 2px 5px #bfbaba54;
+  margin-bottom: 2%;
+}
+.cards .inner-card .img-card {
+  width: 35%;
+}
+.cards .inner-card .img-card img {
+  width: 100%;
+  height: 100%;
+}
+.cards .inner-card .img-info {
+  width: 70%;
+  padding: 2%;
+}
+.cards .inner-card .img-info p:nth-child(1) {
+  font-size: 15px;
+}
+.cards .inner-card .img-info p:nth-child(2) {
+  color: #868484;
+  font-size: 13px;
+  padding: 5% 0%;
+}
+.left-section .arrows {
+  width: 100%;
+}
+.left-section .arrows i {
+  font-size: 18px !important;
+  border: 2px solid lightgray;
+  border-radius: 50%;
+  color: lightgray;
+  padding: 1% 1.5%;
+  margin: 2%;
+}
+.left-section .arrows i:hover {
+  transition: 1s;
+  color: white;
+  background-color: blue;
+}
+.lower-cards .lower-card-item {
+  width: 48%;
+}
+.lower-cards {
+  justify-content: space-between;
+}
+.bottom-left-section {
+  padding-top: 10%;
+}
+.big-card1 .card-img {
+  background-image: url(../images/sea2.webp);
+  background-size: 100% 100%;
+  height: 189px;
+  background-repeat: no-repeat;
+}
+/* ******************** right section *****************/
+
+.right-section .world-info {
+  width: 100%;
+  border-left: 1px solid #f5f0f0;
+}
+.right-section .world-info .title {
+  /* padding-bottom: 7%; */
+  font-weight: bold;
+  padding-left: 7%;
+}
+.right-section .p-info {
+  color: #868484;
+  padding: 5% 7%;
+  width: 100%;
+  line-height: 1.4;
+}
+.right-section .world-info hr {
+  margin: 5% 0;
+}
+.right-cards {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 7%;
+  width: 100%;
+}
+.right-card-item {
+  justify-content: space-between;
+  height: 75px;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 15%);
+  margin-bottom: 2%;
+}
+.right-cards .img-card {
+  width: 24%;
+}
+.right-cards .img-info {
+  width: 74%;
+}
+.right-cards .img-card img {
+  width: 100%;
+  height: 100%;
+}
+.right-cards .img-info p {
+  padding: 4%;
+  font-weight: 500;
+  line-height: 1.3;
+  color: #212529;
+  text-align: left;
+  width: 100%;
+  box-sizing: border-box;
+}
+.social-icons {
+  padding-left: 7%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  justify-content: space-between;
+}
+.social-icons a {
+  padding: 3% 4%;
+  font-size: 13px;
+  border: 1px solid lightgray;
+  border-radius: 50%;
+  color: #212529;
+}
+.social-icons a:hover {
+  transition: 1s;
+  color: blue;
+}
+.left-img {
+  padding-top: 5%;
+  padding-left: 7%;
+}
+.left-img img {
+  width: 100%;
+}
+.left-img p {
+  font-size: 18px;
+  margin-bottom: 10px;
+  padding-top: 5%;
+  font-weight: 700;
+  line-height: 1.3;
+  font-family: inherit;
+  padding-bottom: 7%;
+}
+/* right section */
+
+/**************************** end section-container style ****************************/
+
+/**************************** start travel secton style ****************************/
+.travel-section {
+  padding-bottom: 10%;
+}
+.section-container {
+  justify-content: space-between;
+}
+.travel-section .section-item {
+  width: 31%;
+  text-align: center;
+}
+.travel-section .section-item {
+  box-shadow: 0 2px 8px rgb(0 0 0 / 15%);
+}
+.travel-section .section-item:nth-child(1) {
+  background-image: url(../images/green.webp);
+  background-size: 100% 100%;
+  height: 180px;
+  background-repeat: no-repeat;
+}
+.travel-section .section-item:nth-child(2) {
+  background-image: url(../images/sand.webp);
+  background-size: 100% 100%;
+  height: 180px;
+  background-repeat: no-repeat;
+}
+.travel-section .section-item:nth-child(3) {
+  background-image: url(../images/top-building.webp);
+  background-size: 100% 100%;
+  height: 180px;
+  background-repeat: no-repeat;
+}
+.travel-section .section-item .inner p:nth-child(1) {
+  padding-bottom: 5%;
+}
+.travel-section .section-item .inner p:nth-child(1) a {
+  font-size: 11px;
+  color: blue;
+  background-color: white;
+  padding: 1% 3%;
+}
+.travel-section .section-item .inner {
+  padding: 6%;
+}
+.travel-section .section-item .inner p:nth-child(2) {
+  font-size: 18px;
+  padding: 3%;
+  font-weight: 400;
+}
+.travel-section .section-item .inner p:nth-child(3) {
+  padding-top: 7%;
+  font-size: 11px;
+}
+.travel-section .section-item .inner p:nth-child(3) a {
+  color: lightgray;
+}
+/**************************** end travel section style ****************************/
+
+/**************************** last section style ****************************/
+.inner-container {
+  justify-content: space-between;
+  padding-bottom: 2%;
+}
+.left-aside {
+  width: 68%;
+}
+.left-aside hr {
+  margin: 2% 0;
+  margin-bottom: 4%;
+}
+.left-aside p{
+  font-weight: bold;
+}
+.left-aside .d-flex {
+
+  justify-content: space-between;
+  height: 200px;
+  box-shadow: 0px 0px 15px #635f5f7a;
+  margin-bottom: 1%;
+}
+.left-aside .img-card {
+  width: 29%;
+  height: 100%;
+}
+.left-aside .img-card img {
+  width: 100%;
+  height: 100%;
+}
+.left-aside .img-info {
+  width: 68%;
+  padding: 3%;
+}
+.left-aside .img-info p:nth-child(1) {
+  font-size: 17px;
+  line-height: 1.5;
+  font-weight: 600;
+}
+.left-aside .img-info p:nth-child(2) {
+  line-height: 1.5;
+  font-size: 15px;
+  color: rgb(161, 157, 157);
+  padding: 2% 0;
+}
+.left-aside .img-info p:nth-child(3) {
+  font-size: 12px;
+  color: rgb(161, 157, 157);
+  padding: 2% 0;
+}
+.right-aside {
+  width: 30%;
+  margin-bottom: 1%;
+}
+.right-aside .big-card1 , .right-aside .big-card {
+  width: 100%;
+  margin-bottom: 2%;
+}
+.right-aside hr{
+  margin: 4% 0;
+  margin-bottom: 4%;
+}
+.btn-div{
+  text-align: center;
+margin-top: 10%;
+}
+.btn{
+  padding: 1% 3%;
+  border: 1px solid rgb(182, 178, 178);
+  border-radius: 30px;
+  margin-bottom: 10%;
+  color: rgb(182, 178, 178);
+  background-color: unset;
+  
+  
+}
+.btn:hover{
+  transition: 1s;
+  color: white;
+  background-color: blue;
+}
+/**************************** last section style ****************************/
+
+/**************************** footer style ****************************/
+.footer{
+  color: #8d8d8d;
+  padding: 5% 0;
+  background-color: #161616;
+}
+footer .container{
+  justify-content: space-between;
+}
+footer .left{
+  width: 31%;
+}
+footer .left .info{
+  font-size: 14px;
+  padding-top: 10%;
+}
+footer .between{
+  width: 31%;
+}
+footer .between ul li{
+display:inline;
+
+}
+footer .between ul li a{
+ display: inline-block;
+  color: #8d8d8d;
+  padding-right: 5%;
+  padding-bottom: 10%;
+}
+footer .right{
+  width: 31%;
+}
+footer .right p {
+ font-size: 18px;
+ font-weight: 600;
+ color: white;
+}
+footer .right input{
+  width: 100%;
+  background-color: transparent;
+  margin-top: 4%;
+ padding: 2%;
+ border: none;
+  border-bottom: 1px solid #8d8d8d;
+}
+/**************************** footer style ****************************/
